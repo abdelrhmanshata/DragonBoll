@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="@drawable/shopbackground"
+    tools:context=".ShopActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Shop"
+        android:fontFamily="serif-monospace"
+        android:textColor="#FF1300"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_coins"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="100dp"
+        android:text="100"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <!-- <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/diamond"
+        android:layout_marginTop="103dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_coins"
+        android:layout_centerHorizontal="true"/>-->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@+id/tv_coins"
+        android:src="@drawable/diamond"></pl.droidsonroids.gif.GifImageView>
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:backgroundTintMode="multiply"
+        android:backgroundTint="@color/errorColor"
+        android:background="@drawable/home_button" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/shopP1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/player1a" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shopP2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/player2a" />
+
+                <RelativeLayout
+                    android:id="@+id/unlock2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#c26c6b6b">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="LOCKED"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/price2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="30"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="3dp"
+                        android:layout_toRightOf="@+id/price2"
+                        android:src="@drawable/diamond" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/shopP3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/player3a" />
+
+                <RelativeLayout
+                    android:id="@+id/unlock3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#c26c6b6b">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="LOCKED"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/price3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="50"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="3dp"
+                        android:layout_toRightOf="@+id/price3"
+                        android:src="@drawable/diamond" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shopP4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/player4a" />
+
+                <RelativeLayout
+                    android:id="@+id/unlock4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#c26c6b6b">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="LOCKED"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/price4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="80"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="3dp"
+                        android:layout_toRightOf="@+id/price4"
+                        android:src="@drawable/diamond" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

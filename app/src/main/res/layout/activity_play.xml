@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:context=".PlayActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#88808080">
+
+        <TextView
+            android:id="@+id/score_lb"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Score: 550"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/pause_lb"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_action_pause"
+            android:onClick="pauseGame" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imgdiamond"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/pause_lb"
+            android:src="@drawable/diamond"></pl.droidsonroids.gif.GifImageView>
+
+        <TextView
+            android:id="@+id/tv_coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/imgdiamond"
+            android:text="100"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+       <!-- <pl.droidsonroids.gif.GifImageView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/background_play">
+        </pl.droidsonroids.gif.GifImageView>-->
+
+        <TextView
+            android:id="@+id/startLb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50sp"
+            android:fontFamily="serif-monospace"
+            android:text="Tap to start"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/player"
+            android:scaleType="centerCrop"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/player1a" />
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/food"
+            android:visibility="invisible"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/dragonboll"></pl.droidsonroids.gif.GifImageView>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/enemy1"
+            android:visibility="invisible"
+           android:scaleType="centerCrop"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/enemy8"></pl.droidsonroids.gif.GifImageView>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/enemy2"
+            android:visibility="invisible"
+            android:layout_width="85dp"
+            android:layout_height="55dp"
+            android:src="@drawable/enemy4"></pl.droidsonroids.gif.GifImageView>
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/diamond"
+            android:visibility="invisible"
+            android:scaleType="centerCrop"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/diamond"></pl.droidsonroids.gif.GifImageView>
+
+        <FrameLayout
+            android:id="@+id/frame_lb"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="120dp"
+                android:padding="6dp"
+                android:src="@drawable/layout_paused"
+                android:background="@drawable/frame" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="140dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="serif-monospace"
+                android:text="Paused"
+                android:textColor="#FFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/start_lb"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="190dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/ic_action_start"
+                android:onClick="pauseGame" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
